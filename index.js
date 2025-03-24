@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 // API route
 app.get('/api/message', (req, res) => {
-  res.json({ message: 'Hello from the Node API!',data: [
+  res.json({ message: 'Hello from second App',data: [
     {name: 'John Doe', age: 30},
-    {name: 'Jane Doe', age: 25},
-    {name: 'Jim Doe', age: 35},
 ] });
 });
 
